@@ -1,9 +1,5 @@
 package com.springbootexample.xworkz.dto;
 
-import java.io.Serializable;
-
-
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -13,11 +9,9 @@ import lombok.extern.slf4j.Slf4j;
 @Setter
 @ToString
 @Slf4j
-public class PrintDTO implements Serializable{
+public class PrintDTO {
 
-	
-	private static final long serialVersionUID = 1L;
-
+	private Integer id;
 	private String from;
 	private String message;
 	public PrintDTO() {
