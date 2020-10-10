@@ -36,8 +36,11 @@
  		<div class="form-group">
  			<button class="btn btn-primary btn-md" type="submit">send</button>
  		</div>
+ 	
 		</form>
-		
+		<form  method="GET" action="redirect">
+         <button type="submit">APPInfo</button>
+      </form>
 		</div>
 		<div class="col-md-3"></div>
 		</div>

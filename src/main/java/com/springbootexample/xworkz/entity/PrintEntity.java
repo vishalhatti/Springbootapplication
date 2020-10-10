@@ -4,6 +4,8 @@ package com.springbootexample.xworkz.entity;
 import java.io.Serializable;
 
 import javax.persistence.Column;
+
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -32,6 +34,12 @@ public class PrintEntity  implements Serializable {
 	private String from;
 	@Column(name="message_table")
 	private String message;
+
+	
+	/*
+	 * @Embedded protected Auditable auditable;
+	 */
+	
 	
 	public PrintEntity(){
 		log.info(this.getClass().getSimpleName()+"created entity ");

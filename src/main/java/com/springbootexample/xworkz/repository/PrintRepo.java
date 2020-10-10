@@ -1,14 +1,16 @@
 package com.springbootexample.xworkz.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Repository;
 
-import com.springbootexample.xworkz.dto.PrintDTO;
+
 import com.springbootexample.xworkz.entity.PrintEntity;
 
 @Repository
-public interface PrintRepo extends  CrudRepository<PrintEntity, Integer>{
+@EnableJpaRepositories(basePackages="com.springbootexample.xworkz")
+public interface PrintRepo extends JpaRepository<PrintEntity, Integer>{
 
-	PrintEntity save(PrintDTO printdto);
+	
 
 }
